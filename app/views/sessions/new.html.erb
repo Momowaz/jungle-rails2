@@ -1,0 +1,10 @@
+<!-- app/views/sessions/new.html.erb -->
+<%= form_with(model: :session, local: true) do |form| %>
+  <%= form.label :email %>
+  <%= form.email_field :email, class: 'form-control' %>
+
+  <%= form.label :password %>
+  <%= form.password_field :password, class: 'form-control' %>
+
+  <%= form.submit 'Log In', class: 'btn btn-primary' %>
+<% end %>
